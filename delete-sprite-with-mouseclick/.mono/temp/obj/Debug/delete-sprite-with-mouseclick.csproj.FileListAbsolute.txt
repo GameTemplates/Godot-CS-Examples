@@ -1,0 +1,5 @@
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\delete-sprite-with-mouseclick\.mono\temp\obj\Debug\delete-sprite-with-mouseclick.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\delete-sprite-with-mouseclick\.mono\temp\bin\Debug\delete-sprite-with-mouseclick.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\delete-sprite-with-mouseclick\.mono\temp\bin\Debug\delete-sprite-with-mouseclick.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\delete-sprite-with-mouseclick\.mono\temp\obj\Debug\delete-sprite-with-mouseclick.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\delete-sprite-with-mouseclick\.mono\temp\obj\Debug\delete-sprite-with-mouseclick.pdb

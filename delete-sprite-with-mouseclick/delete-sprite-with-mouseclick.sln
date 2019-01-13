@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delete-sprite-with-mouseclick", "delete-sprite-with-mouseclick.csproj", "{1A5236BC-8053-4709-8F9A-C46E29D406B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{1A5236BC-8053-4709-8F9A-C46E29D406B8}.Tools|Any CPU.Build.0 = Tools|Any CPU
+	EndGlobalSection
+EndGlobal
