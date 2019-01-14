@@ -4,8 +4,8 @@ using System;
 public class Face : Node2D
 {
     private Sprite sprite;
-	private int spriteWidth;
-	private int spriteHeight;
+	private float spriteWidth;
+	private float spriteHeight;
 
     public override void _Ready()
     {
@@ -26,12 +26,16 @@ public class Face : Node2D
         //get sprite node
         sprite = (Sprite)this.FindNode("sprite");
 
-        //get the size of the sprite
+        //get the size of the sprite texture
         var size = sprite.Texture.GetSize();
 
         //get width and height component of the size
-        spriteWidth = (int)size.x;
-        spriteHeight = (int)size.y;
+        spriteWidth = size.x;
+        spriteHeight = size.y;
+		
+		//take the scale of the node in to account too
+		spriteWidth = spriteWidth * this.GetScale().x;
+		spriteHeight = spriteHeight * this.GetScale().y;
 
     }
 
@@ -50,9 +54,9 @@ public class Face : Node2D
 			
 			//get sprite top left corner (origin)
 			var sX = this.GetPosition().x - (spriteWidth / 2);
-			var sY = this.GetPosition().y - (spriteWidth / 2);
+			var sY = this.GetPosition().y - (spriteHeight / 2);
 			
-			//check if the mouse is over the sprite
+			//check if the mouse is over the sprite node
 			if(mX >= sX)
 			{
 				if(mX < sX + spriteWidth)
