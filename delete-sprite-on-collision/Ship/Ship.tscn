@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ship/Ship.cs" type="Script" id=1]
+[ext_resource path="res://Images/orange-ship.png" type="Texture" id=2]
+
+[node name="Ship" type="Node2D"]
+
+position = Vector2( 9.9845, 2.55132 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="hitbox" type="Area2D" parent="." index="1"]
+
+editor/display_folded = true
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hitbox" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -37.6472, 6.91455, -27.8802, 13.8542, -24.5389, 46.7534, 7.46063, 49.4521, -1.53522, 35.4443, 12.2156, 12.8261, 37.7895, 8.71375, 37.5325, -8.37839, 11.573, -12.2337, -1.92078, -35.3659, 5.91125, -48.9911, -24.9675, -46.0602, -27.7588, -13.7289, -37.5411, -7.73328 )
+
+

@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Asteroids/Asteroid.cs" type="Script" id=1]
+[ext_resource path="res://Images/meteorBrown_big2.png" type="Texture" id=2]
+
+[node name="AsteroidLarge2" type="Node2D" index="0"]
+
+position = Vector2( 3.03113, 2.56819 )
+script = ExtResource( 1 )
+
+[node name="sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="hitbox" type="Area2D" parent="." index="1"]
+
+editor/display_folded = true
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hitbox" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -26.3426, 48.0779, -8.71484, 31.9998, 45.3307, 17.2778, 58.3093, -28.8256, 7.66272, -46.6481, -38.9514, -39.5133, -58.9288, -3.36359, -53.2209, 26.3648 )
+
+[connection signal="area_entered" from="hitbox" to="." method="_onHitboxAreaEntered"]
+
+
