@@ -1,0 +1,6 @@
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\bin\Tools\read-and-write-file.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\bin\Tools\read-and-write-file.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\obj\Tools\read-and-write-file.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\obj\Tools\read-and-write-file.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\obj\Tools\read-and-write-file.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\read-and-write-file\.mono\temp\obj\Tools\read-and-write-file.pdb
