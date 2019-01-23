@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rotate-sprite-with-tween", "rotate-sprite-with-tween.csproj", "{FBAFF05B-748D-42B9-89AD-D8ABF4374212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{FBAFF05B-748D-42B9-89AD-D8ABF4374212}.Tools|Any CPU.Build.0 = Tools|Any CPU
+	EndGlobalSection
+EndGlobal

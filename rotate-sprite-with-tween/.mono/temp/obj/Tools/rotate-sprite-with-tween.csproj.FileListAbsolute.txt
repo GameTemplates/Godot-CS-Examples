@@ -1,0 +1,6 @@
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\bin\Tools\rotate-sprite-with-tween.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\bin\Tools\rotate-sprite-with-tween.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\obj\Tools\rotate-sprite-with-tween.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\obj\Tools\rotate-sprite-with-tween.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\obj\Tools\rotate-sprite-with-tween.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-with-tween\.mono\temp\obj\Tools\rotate-sprite-with-tween.pdb
