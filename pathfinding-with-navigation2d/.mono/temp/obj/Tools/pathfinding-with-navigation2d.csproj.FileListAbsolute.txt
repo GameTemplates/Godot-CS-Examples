@@ -1,0 +1,12 @@
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\bin\Tools\pathfinding-with-navigation2d.dll
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\bin\Tools\pathfinding-with-navigation2d.pdb
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.dll
+C:\Users\szoszo\Desktop\Projects\Godot\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\bin\Tools\pathfinding-with-navigation2d.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\bin\Tools\pathfinding-with-navigation2d.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\pathfinding-with-navigation2d\.mono\temp\obj\Tools\pathfinding-with-navigation2d.pdb

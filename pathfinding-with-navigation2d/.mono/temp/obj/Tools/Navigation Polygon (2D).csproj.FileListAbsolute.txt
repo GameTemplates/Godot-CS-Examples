@@ -1,0 +1,6 @@
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\obj\Tools\Navigation Polygon (2D).csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\obj\Tools\Navigation Polygon (2D).csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\bin\Tools\Navigation Polygon (2D).dll
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\bin\Tools\Navigation Polygon (2D).pdb
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\obj\Tools\Navigation Polygon (2D).dll
+C:\Users\szoszo\Desktop\Projects\Godot\navigation2DMono\.mono\temp\obj\Tools\Navigation Polygon (2D).pdb
