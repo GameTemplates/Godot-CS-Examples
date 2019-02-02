@@ -1,0 +1,6 @@
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\obj\Tools\catch-the-ball.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\obj\Tools\catch-the-ball.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\bin\Tools\catch-the-ball.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\bin\Tools\catch-the-ball.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\obj\Tools\catch-the-ball.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\catch-the-ball\.mono\temp\obj\Tools\catch-the-ball.pdb
