@@ -1,0 +1,146 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/Player.cs" type="Script" id=1]
+[ext_resource path="res://ship/ship_1.png" type="Texture" id=2]
+[ext_resource path="res://audio/Laser_Shoot.ogg" type="AudioStream" id=3]
+[ext_resource path="res://audio/thruster.ogg" type="AudioStream" id=4]
+[ext_resource path="res://audio/thruster_down.ogg" type="AudioStream" id=5]
+
+[sub_resource type="Curve" id=1]
+
+min_value = 0.0
+max_value = 1.0
+bake_resolution = 100
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+
+flags = 4
+width = 2048
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+
+render_priority = 0
+trail_divisor = 1
+emission_shape = 2
+emission_box_extents = Vector3( 10, 5, 1 )
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = true
+spread = 45.0
+flatness = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 10.0
+initial_velocity_random = 0.0
+angular_velocity = 10.0
+angular_velocity_random = 0.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 0.0
+linear_accel_random = 0.0
+radial_accel = 0.0
+radial_accel_random = 0.0
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
+damping_random = 0.0
+angle = 0.0
+angle_random = 0.0
+scale = 4.0
+scale_random = 0.0
+scale_curve = SubResource( 2 )
+color = Color( 1, 0, 0, 1 )
+hue_variation = 0.0
+hue_variation_random = 0.0
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+
+[node name="Player" type="Node2D"]
+
+position = Vector2( 511.501, 303.363 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="bullet_point" type="Node2D" parent="." index="1"]
+
+position = Vector2( 11.6117, 0.411896 )
+scale = Vector2( 0.0517914, 0.0460585 )
+
+[node name="shoot_sound" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="thruster_sound" type="AudioStreamPlayer" parent="." index="3"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="thrusterdown_sound" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="collision_mask" type="Area2D" parent="." index="5"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="collision_shape" type="CollisionPolygon2D" parent="collision_mask" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -15.8, -15.8245, 15.5934, 0.564667, -15.7652, 15.8996 )
+
+[node name="thruster_particle" type="Particles2D" parent="." index="6"]
+
+position = Vector2( -25.7008, 0.935486 )
+rotation = 3.14058
+emitting = false
+amount = 80
+lifetime = 0.5
+one_shot = false
+preprocess = 0.0
+speed_scale = 1.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = false
+draw_order = 0
+process_material = SubResource( 3 )
+texture = null
+normal_map = null
+h_frames = 1
+v_frames = 1
+_sections_unfolded = [ "Process Material", "Time" ]
+
+[connection signal="area_entered" from="collision_mask" to="." method="_onCollisionMaskAreaEntered"]
+
+

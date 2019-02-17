@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/LargeAsteroid.cs" type="Script" id=1]
+[ext_resource path="res://asteroids/larg_asteroid_2.png" type="Texture" id=2]
+[ext_resource path="res://asteroids/larg_asteroid_3.png" type="Texture" id=3]
+[ext_resource path="res://asteroids/larg_asteroid_1.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+} ]
+
+[node name="LargeAsteroid" type="Node2D" index="0"]
+
+position = Vector2( -0.153076, 2.20035 )
+script = ExtResource( 1 )
+
+[node name="sprite" type="AnimatedSprite" parent="." index="0"]
+
+frames = SubResource( 1 )
+animation = "1"
+
+[node name="asteroid_collision_masks" type="Area2D" parent="." index="1"]
+
+position = Vector2( 2.44757, 1.57343 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="collision_shape1" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 34.7978, -9.9249, 35.6719, 2.13797, 18.3643, 13.8512, 22.0356, 31.8581, -3.31387, 39.0259, -26.7403, 27.3127, -18.6984, 17.3477, -47.8941, 15.7743, -47.8941, -10.0997, -14.3278, -34.9248, 16.2664, -35.0996, 31.651, -23.3864 )
+disabled = true
+
+[node name="collision_shape2" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 10.037, -17.79, 11.7457, -10.3854, 38.0889, 3.42691, 32.8202, 24.3591, -2.77863, 42.0161, -38.5199, 30.0549, -44.2157, 1.43338, -40.0862, -34.7351, 4.34116, -32.8839 )
+disabled = true
+
+[node name="collision_shape3" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="2"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -20.7786, -4.39191, -9.95657, -9.37573, -37.4389, -35.4341, 20.8008, -45.829, 40.0242, -2.25598, 11.8299, 35.906, -39.0052, 32.0613, -37.8661, 4.43661 )
+disabled = true
+
+[connection signal="area_entered" from="asteroid_collision_masks" to="." method="_onCollisionMasksAreaEntered"]
+
+

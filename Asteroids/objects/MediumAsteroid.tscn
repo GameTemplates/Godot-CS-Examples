@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/MediumAsteroid.cs" type="Script" id=1]
+[ext_resource path="res://asteroids/medium_asteroid_2.png" type="Texture" id=2]
+[ext_resource path="res://asteroids/medium_asteroid_3.png" type="Texture" id=3]
+[ext_resource path="res://asteroids/medium_asteroid_1.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+} ]
+
+[node name="MediumAsteroid" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="sprite" type="AnimatedSprite" parent="." index="0"]
+
+frames = SubResource( 1 )
+animation = "3"
+
+[node name="asteroid_collision_masks" type="Area2D" parent="." index="1"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="collision_shape1" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="0"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 0.252632, -24.0374, 16.187, -21.4213, 25.9379, -0.0169373, 20.9435, 19.0092, -0.698669, 28.5222, -7.59563, 15.2039, -24.7191, 1.88567, -14.9682, -11.1948, -22.103, -25.94 )
+disabled = true
+
+[node name="collision_shape2" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -5.26929, -16.4912, 0.749142, -13.5977, 20.2625, -17.7642, 29.9845, -6.93119, 18.5123, 16.9549, 23.0468, 26.4017, -13.736, 29.6696, -24.9862, 18.9992, -3.06564, 9.14077, -28.1177, -8.48848, -25.7981, -26.2337 )
+disabled = true
+
+[node name="collision_shape3" type="CollisionPolygon2D" parent="asteroid_collision_masks" index="2"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -18.7232, -17.0711, -9.90858, -18.231, -5.38528, -29.1333, 24.886, -27.0456, 20.4787, -12.3159, 28.3655, 3.2257, 22.3344, 23.4066, -17.6794, 26.3061, -14.7798, 18.8833, -21.6228, 9.72068, -26.8419, -16.2593 )
+disabled = true
+
+[connection signal="area_entered" from="asteroid_collision_masks" to="." method="_onCollisionMasksAreaEntered"]
+
+

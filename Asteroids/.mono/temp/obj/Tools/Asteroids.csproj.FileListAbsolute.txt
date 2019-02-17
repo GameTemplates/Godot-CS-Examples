@@ -1,0 +1,6 @@
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.csprojAssemblyReference.cache
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.csproj.CoreCompileInputs.cache
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/bin/Tools/Asteroids.dll
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/bin/Tools/Asteroids.pdb
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.dll
+/home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.pdb

@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="scripts/Game.cs">
+    <Files>
+      <File FileName="scripts/LargeAsteroid.cs" Line="1" Column="1" />
+      <File FileName="scripts/Game.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
