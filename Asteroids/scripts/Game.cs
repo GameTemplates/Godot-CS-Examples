@@ -10,6 +10,8 @@ public class Game : Node
 	public static PackedScene explosionSound; //it is a public static value so we can access it using Game.explosionSound
 	public static PackedScene explosionParticle; ////it is a public static value so we can access it using Game.explosionParticle
 	public static int life; //it is a public static value so we can access it with Game.life
+	public static float screenWidth; //it is a public value to access use Game.screenWidth
+	public static float screenHeight; //it is a public value to access use Game.screenHeight
 	
 	private PackedScene player;
 	private RichTextLabel lifeText;
@@ -41,6 +43,10 @@ public class Game : Node
         // Called every frame. Delta is time since last frame.
         // Update game logic here. 
 		
+		//get screen width and height
+		screenWidth = GetViewport().GetSize().x;
+		screenHeight = GetViewport().GetSize().y;
+		
 		/***********
 		UPDATE LIFE TEXT
 		***********/
@@ -61,9 +67,6 @@ public class Game : Node
 				//if life > 0 respawnt the player
 				if(life > 0)
 				{
-					//get screen width and sceen height
-					var screenWidth = GetViewport().GetSize().x;
-					var screenHeight = GetViewport().GetSize().y;
 					
 					//create a new instance of the player in the middle of the screen
 					var playerInstance = (Node2D)player.Instance();

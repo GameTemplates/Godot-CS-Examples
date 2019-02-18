@@ -12,7 +12,10 @@ public class Player : Node2D
 	private float movementDirection;
 	private bool canDamage;
 	private float godTime;
+	
 	private Sprite sprite;
+	private float spriteWidth;
+	private float spriteHeight;
 	
 	private float shootTimer;
 	private float shootSpeed;
@@ -64,6 +67,10 @@ public class Player : Node2D
 		
 		//get reference to scene containing the player debris
 		playerDebris = (PackedScene)ResourceLoader.Load("res://objects/PlayerDebris.tscn");
+		
+		//get sprite width and height
+        spriteWidth = sprite.GetTexture().GetWidth() / this.GetScale().x;
+        spriteHeight = sprite.GetTexture().GetHeight() / this.GetScale().y;
         
     }
 
@@ -127,7 +134,7 @@ public class Player : Node2D
 		var direction = new Vector2((float)Math.Cos(movementDirection), (float)Math.Sin(movementDirection));
 		direction.Normalized();
 		
-		//move ship toward new vector at the given speed
+		//update ship position to move toward new vector at the given speed
 		this.SetPosition((this.GetPosition() + direction * (speed * delta)));
 		
 		
@@ -139,28 +146,20 @@ public class Player : Node2D
 		var posX = this.Position.x;
 		var posY = this.Position.y;
 		
-		//get screen width and height
-		var screenWidth = GetViewport().GetSize().x;
-		var screenHeight = GetViewport().GetSize().y;
-		
-		//get sprite width and height
-        var spriteWidth = sprite.GetTexture().GetWidth() / this.GetScale().x;
-        var spriteHeight = sprite.GetTexture().GetHeight() / this.GetScale().y;
-		
 		//if ship left the screen on the left, bring it back on the right
 		if(posX <= 0 - spriteWidth/2)
-			posX = screenWidth + spriteWidth/2;
+			posX = Game.screenWidth + spriteWidth/2;
 		//if ship left the screen on the right, bring it back on the left
-		else if(posX >= screenWidth + spriteWidth/2)
+		else if(posX >= Game.screenWidth + spriteWidth/2)
 			posX = 0 - spriteWidth/2;
 		//if ship left the screen on the top, bring it back on the bottom
 		if(posY <= 0 - spriteHeight/2)
-			posY = screenHeight + spriteHeight/2;
+			posY = Game.screenHeight + spriteHeight/2;
 		//if ship left the screen on the bottom, bring it back on the top
-		else if(posY >= screenHeight + spriteHeight/2)
+		else if(posY >= Game.screenHeight + spriteHeight/2)
 			posY = 0 - spriteHeight/2;
 			
-		//set ship position
+		//update ship position
 		this.SetPosition(new Vector2(posX, posY));
 		
 		
@@ -169,7 +168,7 @@ public class Player : Node2D
 		*****************/
 		
 		//if shoot key is pressed, create an instance of the bullet
-		//bullet behavior is handles in Bullet.sc 
+		//bullet behavior is handles in Bullet.cs 
 		if(Input.IsActionJustPressed("shoot"))  
 			shootTimer = shootSpeed; //if shoot is pressed for the first time, set shootTimer to shootSpeed so we shoot once
 			
@@ -211,7 +210,7 @@ public class Player : Node2D
 		DESTROY PLAYER
 		*************/
 		
-		//if play can damage
+		//if player can damage
 		if(canDamage)
 		{
 		

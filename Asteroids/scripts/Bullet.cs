@@ -5,7 +5,9 @@ public class Bullet : Node2D
 {
     private int speed;
 	private Sprite sprite;
-
+	private float spriteWidth;
+	private float spriteHeight;
+	
     public override void _Ready()
     {
         // Called every time the node is added to the scene.
@@ -17,6 +19,10 @@ public class Bullet : Node2D
         
 		//get reference to the sprite
 		sprite = (Sprite)this.GetNode("sprite");
+		
+		//get sprite width and height
+        spriteWidth = sprite.GetTexture().GetWidth() / this.GetScale().x;
+        spriteHeight = sprite.GetTexture().GetHeight() / this.GetScale().y;
     }
 
     public override void _Process(float delta)
@@ -46,25 +52,17 @@ public class Bullet : Node2D
 		var posX = this.Position.x;
 		var posY = this.Position.y;
 		
-		//get screen width and height
-		var screenWidth = GetViewport().GetSize().x;
-		var screenHeight = GetViewport().GetSize().y;
-		
-		//get sprite width and height
-        var spriteWidth = sprite.GetTexture().GetWidth() / this.GetScale().x;
-        var spriteHeight = sprite.GetTexture().GetHeight() / this.GetScale().y;
-		
 		//if bullet left the screen on the left, delete
 		if(posX <= 0 - spriteWidth/2)
 			this.Free();
 		//if bullet left the screen on the right, delete
-		else if(posX >= screenWidth + spriteWidth/2)
+		else if(posX >= Game.screenWidth + spriteWidth/2)
 			this.Free();
 		//if bullet left the screen on the top, delete
 		else if(posY <= 0 - spriteHeight/2)
 			this.Free();
 		//if ship left the screen on the bottom, delete
-		else if(posY >= screenHeight + spriteHeight/2)
+		else if(posY >= Game.screenHeight + spriteHeight/2)
 			this.Free();
 		
     }

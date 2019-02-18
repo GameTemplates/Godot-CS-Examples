@@ -13,6 +13,8 @@ public class LargeAsteroid : Node2D
 	private int movementSpeed;
 	private string[] direction = new string[3];
 	private int animation;
+	private float spriteWidth;
+	private float spriteHeight;
 	
     public override void _Ready()
     {
@@ -48,6 +50,10 @@ public class LargeAsteroid : Node2D
 		direction[2] = "right";
 		
 		rotationDirection = direction[Game.rnd.Next(1,3)];
+		
+		//get sprite width and height
+       spriteWidth = sprite.GetSpriteFrames().GetFrame(animation.ToString(),0).GetWidth() / this.GetScale().x;
+       spriteHeight = sprite.GetSpriteFrames().GetFrame(animation.ToString(),0).GetHeight() / this.GetScale().y;
         
     }
 
@@ -78,25 +84,17 @@ public class LargeAsteroid : Node2D
 		var posX = this.Position.x;
 		var posY = this.Position.y;
 		
-		//get screen width and height
-		var screenWidth = GetViewport().GetSize().x;
-		var screenHeight = GetViewport().GetSize().y;
-		
-		//get sprite width and height
-        var spriteWidth = sprite.GetSpriteFrames().GetFrame(animation.ToString(),0).GetWidth() / this.GetScale().x;
-        var spriteHeight = sprite.GetSpriteFrames().GetFrame(animation.ToString(),0).GetHeight() / this.GetScale().y;
-		
 		//if asteroid left the screen on the left, bring it back on the right
 		if(posX <= 0 - spriteWidth/2)
-			posX = screenWidth + spriteWidth/2;
+			posX = Game.screenWidth + spriteWidth/2;
 		//if asteroid left the screen on the right, bring it back on the left
-		else if(posX >= screenWidth + spriteWidth/2)
+		else if(posX >= Game.screenWidth + spriteWidth/2)
 			posX = 0 - spriteWidth/2;
 		//if asteroid left the screen on the top, bring it back on the bottom
 		if(posY <= 0 - spriteHeight/2)
-			posY = screenHeight + spriteHeight/2;
+			posY = Game.screenHeight + spriteHeight/2;
 		//if asteroid left the screen on the bottom, bring it back on the top
-		else if(posY >= screenHeight + spriteHeight/2)
+		else if(posY >= Game.screenHeight + spriteHeight/2)
 			posY = 0 - spriteHeight/2;
 			
 		//set asteroid position
