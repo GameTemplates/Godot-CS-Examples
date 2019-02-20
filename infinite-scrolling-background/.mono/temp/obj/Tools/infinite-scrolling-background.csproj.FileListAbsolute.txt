@@ -1,0 +1,6 @@
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.csprojAssemblyReference.cache
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.csproj.CoreCompileInputs.cache
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/bin/Tools/infinite-scrolling-background.dll
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/bin/Tools/infinite-scrolling-background.pdb
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.dll
+/home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.pdb
