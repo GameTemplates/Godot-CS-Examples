@@ -5,10 +5,7 @@ public class Background : Node2D
 {
     private float scrollSpeed;
 	private Sprite sprite;
-	private float spriteWidth;
-	private float spriteHeight;
 	private float screenWidth;
-	private float screenHeight;
 
     public override void _Ready()
     {
@@ -23,11 +20,6 @@ public class Background : Node2D
 		
 		//get window width and height
 		screenWidth = GetViewport().GetSize().x;
-		screenHeight = GetViewport().GetSize().y;
-		
-		//get sprite width and height
-		spriteWidth = sprite.GetTexture().GetWidth(); /// this.GetScale().x;
-        spriteHeight = sprite.GetTexture().GetHeight(); /// this.GetScale().y;
         
     }
 
@@ -42,9 +34,6 @@ public class Background : Node2D
 		
 		//move background to the left at the given speed
 		posX -= scrollSpeed * delta;
-		
-		//update positon of the background
-		this.SetPosition(new Vector2(posX, posY));
 		
 		//note: image is imported as Repeat and using the Region property to create a tiled background
 		//if the origin point of the image (the middle of the Region) leave the screen on the left, reset the position to the right
