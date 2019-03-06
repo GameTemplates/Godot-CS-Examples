@@ -1,0 +1,7 @@
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/bin/Debug/mydata
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/bin/Debug/read-and-write-sqlite-database.dll
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/bin/Debug/read-and-write-sqlite-database.pdb
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Debug/read-and-write-sqlite-database.csprojAssemblyReference.cache
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Debug/read-and-write-sqlite-database.csproj.CoreCompileInputs.cache
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Debug/read-and-write-sqlite-database.dll
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Debug/read-and-write-sqlite-database.pdb
