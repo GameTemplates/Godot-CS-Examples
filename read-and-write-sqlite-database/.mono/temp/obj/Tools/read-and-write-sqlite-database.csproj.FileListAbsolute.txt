@@ -4,4 +4,4 @@
 /home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Tools/read-and-write-sqlite-database.csproj.CoreCompileInputs.cache
 /home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Tools/read-and-write-sqlite-database.dll
 /home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/obj/Tools/read-and-write-sqlite-database.pdb
-/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/bin/Tools/mydata
+/home/szoszo/Documents/Projects/GodotMono/read-and-write-sqlite-database/.mono/temp/bin/Tools/mydata.db

@@ -1,6 +1,6 @@
 /*
 NOTE: this example require to open the solution file in Visual Studio or Mono Develop to add reference to
-the packages required to work with SQLite database and to add the database (mydata) to the solution file
+the packages required to work with SQLite database and data.
 Also require to install SQLite on our computer: https://www.sqlite.org/index.html
 
 WHEN exporting the project you may need to copy the database file over to the export folder manually!
@@ -21,8 +21,8 @@ public class Game : Node
 	private Popup addPlayerDialog;
 	private Popup editPlayerDialog;
 	public static Popup alertDialog; //public access with Game.alertDialog
-	private string sortBy;
-	private string sortOrder;
+	public static string sortBy; //public access with Game.sortBy
+	public static string sortOrder; //public access with Game.sortOrder
 	
     public override void _Ready()
     {
@@ -42,7 +42,7 @@ public class Game : Node
 		alertDialog = (Popup)this.GetNode("AlertDialog");
 		
         //connection string to estabilish connection to a database file
-        database = "URI=file:mydata"; //file is located in root directory and set to copy if newer when compile
+        database = "URI=file:mydata.db"; //file is located in root directory and set to copy if newer when compile
 
         try
         {
@@ -56,15 +56,15 @@ public class Game : Node
             queryCommand = new SqliteCommand(queryString, connection);
             //execute the command which return the version number
             string version = Convert.ToString(queryCommand.ExecuteScalar());
-            //display SQLite version number to validate the connextion was successfull
+            //display SQLite version number to validate the connection was successfull
             GD.Print($"SQLite version : {version}");
 			
 			//display all items from the database in the list
-			UpdateItemList();
+			UpdateItemListByOrder(sortBy, sortOrder);
 
         }
 
-        //catch SQLite expcetions
+        //catch SQLite exceptions
         catch (SqliteException ex)
         {
             //if excepton happened, outut the error
@@ -73,9 +73,9 @@ public class Game : Node
         }
         finally //if no exception happened
         {
-            if (queryCommand != null) //if the response is null, meaning contain no valid query string or connection
+            if (queryCommand != null) //if the queryCommand is null, meaning contain no valid query string or connection
             {
-                queryCommand.Dispose(); //dispose the response
+                queryCommand.Dispose(); //dispose the command
             }
 
             if (connection != null) //if connection is null meanining, failed to connect
@@ -93,7 +93,7 @@ public class Game : Node
                 }
                 finally
                 {
-                    connection.Dispose(); //dispose connection
+                    connection.Dispose(); //dispose connection if connection failed (or closed)
                 }
             }
         }
@@ -156,7 +156,7 @@ public class Game : Node
 			connection.Close();
 			
 			//update item list
-			UpdateItemList();
+			UpdateItemListByOrder(Game.sortBy, Game.sortOrder);
 		}
 		else //otherwise display a dialog and ask the user to select an ID
 		{
@@ -281,35 +281,7 @@ public class Game : Node
 		Game.alertDialog.PopupCentered();
 	}
 	
-	//method to display all items from the database in the list 
-	public static void UpdateItemList()
-	{
-		
-		//clear item list
-		Game.itemList.Clear();
-		
-		//get all rows from the Players table
-		Game.queryString = "SELECT * FROM Players";
-        //create a command
-        Game.queryCommand = new SqliteCommand(Game.queryString, Game.connection);
-		//execute the command and store response inside an adapter
-        SqliteDataAdapter da = new SqliteDataAdapter(Game.queryCommand);
-		//create a new data table
-        DataTable dt = new DataTable();
-		//fill the data table in to the adapter
-        da.Fill(dt);
-		
-		//add all rows to the item list
-        foreach (DataRow dr in dt.Rows)
-        {
-			//3 in a row
-			Game.itemList.AddItem(dr["Id"].ToString(),null,true);
-			Game.itemList.AddItem(dr["Name"].ToString(),null,false);
-			Game.itemList.AddItem(dr["Score"].ToString(),null,false);
-        }
-	}
-	
-	//method to display all items from the database in the list by order
+	//method to display, update all items from the database in the list by order
 	public static void UpdateItemListByOrder(string _sortBy, string _sortOrder)
 	{
 		

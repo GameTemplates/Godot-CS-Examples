@@ -59,9 +59,9 @@ public class EditPlayerDialog : WindowDialog
 				Game.connection.Close();
 				
 				//update the item list to display the new database
-				Game.UpdateItemList();
+				Game.UpdateItemListByOrder(Game.sortBy, Game.sortOrder);
 				
-				//close tis dialog
+				//close this dialog
 				this.Hide();
 			}
 			
