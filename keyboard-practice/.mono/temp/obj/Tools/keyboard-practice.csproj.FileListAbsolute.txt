@@ -4,3 +4,9 @@
 /home/szoszo/Projects/GodotMono/keyboard-practice/.mono/temp/bin/Tools/keyboard-practice.pdb
 /home/szoszo/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.dll
 /home/szoszo/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.pdb
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/bin/Tools/keyboard-practice.dll
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/bin/Tools/keyboard-practice.pdb
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.csprojAssemblyReference.cache
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.csproj.CoreCompileInputs.cache
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.dll
+/home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.pdb

@@ -128,7 +128,8 @@ public class MediumAsteroid : Node2D
 			{
 				var sAsteroidInstance = (Node2D)sAsteroid.Instance();
 				sAsteroidInstance.SetPosition(new Vector2(this.Position.x, this.Position.y));
-				GetParent().AddChild(sAsteroidInstance);
+				//GetParent().AddChild(sAsteroidInstance); //old code from 3.0.6, drop error in 3.1 because trying to execute immediately
+				GetParent().CallDeferred("add_child", sAsteroidInstance); //in 3.1 defer execution for LATER to add asteroid instance to parent
 			}
 			
 			//create an instance of the explosion paritcle and add to the parent node
