@@ -4,3 +4,9 @@
 /home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/bin/Tools/Asteroids.pdb
 /home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.dll
 /home/szoszo/Documents/Projects/GodotMono/Asteroids/.mono/temp/obj/Tools/Asteroids.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\bin\Tools\Asteroids.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\bin\Tools\Asteroids.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\obj\Tools\Asteroids.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\obj\Tools\Asteroids.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\obj\Tools\Asteroids.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\Asteroids\.mono\temp\obj\Tools\Asteroids.pdb

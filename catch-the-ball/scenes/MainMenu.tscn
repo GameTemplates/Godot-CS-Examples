@@ -11,5 +11,4 @@ margin_top = 252.0
 margin_right = 687.0
 margin_bottom = 352.0
 text = "START GAME"
-
 [connection signal="pressed" from="Button" to="." method="_onButtonPressed"]

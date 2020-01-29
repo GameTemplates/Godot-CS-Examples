@@ -4,3 +4,9 @@
 /home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/bin/Tools/infinite-scrolling-background.pdb
 /home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.dll
 /home/szoszo/Documents/Projects/GodotMono/infinite-scrolling-background/.mono/temp/obj/Tools/infinite-scrolling-background.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\bin\Tools\infinite-scrolling-background.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\bin\Tools\infinite-scrolling-background.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\obj\Tools\infinite-scrolling-background.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\obj\Tools\infinite-scrolling-background.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\obj\Tools\infinite-scrolling-background.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\infinite-scrolling-background\.mono\temp\obj\Tools\infinite-scrolling-background.pdb

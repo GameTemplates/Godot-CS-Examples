@@ -31,7 +31,7 @@ public class TextInput : TextEdit
 
         //open file for write, if file does not exist, we are crerating a new file
         var file = new File();
-        file.Open("res://text.txt", 2); //2 means open for write
+        file.Open("res://text.txt", File.ModeFlags.Write);
 
         //get text from the text input and write it in to the file
         file.StoreString(this.Text);
@@ -47,7 +47,7 @@ public class TextInput : TextEdit
 
         //open file for read
         var file = new File();
-        file.Open("res://text.txt", 1); //1 means open for read
+        file.Open("res://text.txt", File.ModeFlags.Read);
 
         //get text from the file and assign it to the text property
 		//in case the file doesn't exist, it is return an empty string

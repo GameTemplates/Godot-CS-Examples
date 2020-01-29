@@ -1,0 +1,6 @@
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\obj\Tools\rotate-sprite-toward-mouse.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\obj\Tools\rotate-sprite-toward-mouse.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\bin\Tools\rotate-sprite-toward-mouse.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\bin\Tools\rotate-sprite-toward-mouse.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\obj\Tools\rotate-sprite-toward-mouse.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\rotate-sprite-toward-mouse\.mono\temp\obj\Tools\rotate-sprite-toward-mouse.pdb

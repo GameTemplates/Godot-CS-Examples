@@ -26,5 +26,4 @@ margin_top = -200.0
 margin_right = 16.0
 margin_bottom = -82.0
 window_title = "Dialog"
-
 [connection signal="pressed" from="InputBox/Button" to="InputBox" method="_onButtonPressed"]

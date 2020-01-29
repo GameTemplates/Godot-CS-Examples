@@ -10,3 +10,9 @@
 /home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.csproj.CoreCompileInputs.cache
 /home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.dll
 /home/szoszo/Documents/Projects/GodotMono/keyboard-practice/.mono/temp/obj/Tools/keyboard-practice.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\bin\Tools\keyboard-practice.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\bin\Tools\keyboard-practice.pdb
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\obj\Tools\keyboard-practice.csprojAssemblyReference.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\obj\Tools\keyboard-practice.csproj.CoreCompileInputs.cache
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\obj\Tools\keyboard-practice.dll
+C:\Users\szoszo\Desktop\Projects\gametemplates\GodotMono\keyboard-practice\.mono\temp\obj\Tools\keyboard-practice.pdb
